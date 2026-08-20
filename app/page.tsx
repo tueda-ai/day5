@@ -4,7 +4,7 @@ import { GoogleGenAI } from "@google/genai";
 import { ChangeEvent, FormEvent, useEffect, useState } from "react";
 
 const STORAGE_KEY = "lecture-note.gemini-api-key";
-const MODEL = "gemini-3.7-flash";
+const MODEL = "gemini-3.5-flash";
 const MAX_FILE_SIZE = 14 * 1024 * 1024;
 const MIME_TYPES: Record<string, string> = {
   wav: "audio/wav",
