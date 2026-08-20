@@ -10,7 +10,7 @@
 
 - Node.js 22.13.0以上
 - Gemini APIキー
-- WAV，MP3，AIFF，AAC，OGG，FLACのいずれかの音声ファイル
+- 14 MB以下のWAV，MP3，AIFF，AAC，OGG，FLAC音声ファイル
 
 APIキーは[Google AI Studio](https://aistudio.google.com/app/apikey)で作成できます．
 
@@ -45,5 +45,6 @@ npm run build
 
 - APIキーはブラウザーの `localStorage` に保存され，ソースコードには保存されません．
 - 音声ファイルは処理のためGemini APIへ送信されます．
+- 文字起こし，要約，要点は1回のGemini APIリクエストでまとめて生成されます．
 - API利用量に応じて料金や利用制限が発生する場合があります．
 - 詳細仕様は [SPEC.md](./SPEC.md)，API情報は [API_NOTES.md](./API_NOTES.md) を参照してください．
